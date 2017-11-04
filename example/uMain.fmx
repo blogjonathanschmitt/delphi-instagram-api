@@ -1,0 +1,448 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Jonathan Schmitt - https://jonathanschmitt.blogspot.com.br'
+  ClientHeight = 557
+  ClientWidth = 822
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object mmoResult: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Bottom
+    Position.Y = 400.000000000000000000
+    Size.Width = 822.000000000000000000
+    Size.Height = 157.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    Viewport.Width = 818.000000000000000000
+    Viewport.Height = 153.000000000000000000
+  end
+  object btnGetAccessToken: TButton
+    Position.X = 662.000000000000000000
+    Position.Y = 52.000000000000000000
+    Size.Width = 111.000000000000000000
+    Size.Height = 26.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Get Access Token'
+    OnClick = btnGetAccessTokenClick
+  end
+  object btn2: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 85.000000000000000000
+    Size.Width = 111.000000000000000000
+    Size.Height = 26.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Get Recent Media'
+    OnClick = btn2Click
+  end
+  object edtAccessToken: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 17
+    Position.X = 93.000000000000000000
+    Position.Y = 53.000000000000000000
+    Size.Width = 564.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+  end
+  object lbl1: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 55.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Access Token'
+  end
+  object Button1: TButton
+    Position.X = 128.000000000000000000
+    Position.Y = 85.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 26.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = 'Get Media By ID'
+    OnClick = Button1Click
+  end
+  object edtMideaID: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 26
+    Text = '1619850659203652969_321539360'
+    Position.X = 128.000000000000000000
+    Position.Y = 133.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label1: TLabel
+    Position.X = 160.000000000000000000
+    Position.Y = 117.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Midea ID'
+  end
+  object lbl2: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 117.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Latitude'
+  end
+  object edtLatitude: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 25
+    Text = '-30.036559'
+    Position.X = 8.000000000000000000
+    Position.Y = 133.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lbl3: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 157.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Longitude'
+  end
+  object edtLongitude: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 21
+    Text = '-51.2107047'
+    Position.X = 8.000000000000000000
+    Position.Y = 173.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lbl4: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 197.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Distance'
+  end
+  object edtDistance: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 19
+    Text = '3000'
+    Position.X = 8.000000000000000000
+    Position.Y = 213.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Button2: TButton
+    Position.X = 128.000000000000000000
+    Position.Y = 165.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 26.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    Text = 'Get Media By Shortcode'
+    OnClick = Button2Click
+  end
+  object edtShortcode: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 23
+    Text = 'BQXt9GLDdTB'
+    Position.X = 128.000000000000000000
+    Position.Y = 213.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label2: TLabel
+    Position.X = 160.000000000000000000
+    Position.Y = 197.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Shortcode'
+  end
+  object Button3: TButton
+    Position.X = 280.000000000000000000
+    Position.Y = 85.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 26.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = 'Get Content User Self'
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Position.X = 280.000000000000000000
+    Position.Y = 117.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 26.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Get Content User By ID'
+    OnClick = Button4Click
+  end
+  object Label3: TLabel
+    Position.X = 312.000000000000000000
+    Position.Y = 149.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'User ID'
+  end
+  object edtUserID: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 22
+    Text = '321539360'
+    Position.X = 280.000000000000000000
+    Position.Y = 165.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Button5: TButton
+    Position.X = 448.000000000000000000
+    Position.Y = 85.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 26.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = 'Get Recent Midea User Self'
+    OnClick = Button5Click
+  end
+  object lbl5: TLabel
+    Position.X = 496.000000000000000000
+    Position.Y = 149.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Min ID'
+  end
+  object edtMinID: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 24
+    Text = '0'
+    Position.X = 464.000000000000000000
+    Position.Y = 165.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lbl6: TLabel
+    Position.X = 496.000000000000000000
+    Position.Y = 189.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Max ID'
+  end
+  object edtMaxID: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 20
+    Text = '9999999999999'
+    Position.X = 464.000000000000000000
+    Position.Y = 205.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lbl7: TLabel
+    Position.X = 496.000000000000000000
+    Position.Y = 229.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Count'
+  end
+  object edtCount: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 18
+    Text = '5'
+    Position.X = 464.000000000000000000
+    Position.Y = 245.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Button6: TButton
+    Position.X = 448.000000000000000000
+    Position.Y = 117.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 26.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Text = 'Get Recent Midea User By ID'
+    OnClick = Button6Click
+  end
+  object Button7: TButton
+    Position.X = 616.000000000000000000
+    Position.Y = 85.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 26.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'Get User Liked Self'
+    OnClick = Button7Click
+  end
+  object Button8: TButton
+    Position.X = 616.000000000000000000
+    Position.Y = 117.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 26.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'Search Users By Query'
+    OnClick = Button8Click
+  end
+  object edtQuery: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 37
+    Position.X = 616.000000000000000000
+    Position.Y = 165.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label4: TLabel
+    Position.X = 664.000000000000000000
+    Position.Y = 149.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Query'
+  end
+  object Button9: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 325.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 26.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Get Tag By Name'
+    OnClick = Button9Click
+  end
+  object Label5: TLabel
+    Position.X = 64.000000000000000000
+    Position.Y = 352.000000000000000000
+    Size.Width = 33.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Tag'
+  end
+  object edtTagName: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 35
+    Position.X = 8.000000000000000000
+    Position.Y = 368.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Button10: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 293.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 26.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Get Tag Recent Media By Name'
+    OnClick = Button10Click
+  end
+  object Button11: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 261.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 26.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Search Tag By Name'
+    OnClick = Button11Click
+  end
+  object edtClientID: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 15
+    Text = '7ac5493ac1564c4eb8c7fd52a039e6c5'
+    Position.X = 240.000000000000000000
+    Position.Y = 20.000000000000000000
+    Size.Width = 218.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+  end
+  object Label6: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 240.000000000000000000
+    Position.Y = -1.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Client ID'
+  end
+  object edtClientSecret: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 14
+    Text = '54955b4e3157457ea1ac7d6a57fa2bd7'
+    Position.X = 464.000000000000000000
+    Position.Y = 20.000000000000000000
+    Size.Width = 218.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+  end
+  object Label7: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 464.000000000000000000
+    Position.Y = -1.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Client Secret'
+  end
+  object Label8: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 8.000000000000000000
+    Position.Y = 2.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Redirect URI (URL)'
+  end
+  object edtRedirectURI: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 16
+    Text = 'https://jonathanschmitt.blogspot.com.br'
+    Position.X = 8.000000000000000000
+    Position.Y = 20.000000000000000000
+    Size.Width = 218.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+  end
+  object Label9: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 472.000000000000000000
+    Position.Y = 344.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    Text = 'By Jonathan Schmitt'
+  end
+  object Label10: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 472.000000000000000000
+    Position.Y = 368.000000000000000000
+    Size.Width = 321.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    Text = 'https://jonathanschmitt.blogspot.com.br'
+  end
+end
