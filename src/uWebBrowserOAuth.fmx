@@ -1,0 +1,19 @@
+object frmWebBrowserOAuth: TfrmWebBrowserOAuth
+  Left = 0
+  Top = 0
+  Caption = 'Authorization'
+  ClientHeight = 483
+  ClientWidth = 581
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object wbOAuth: TWebBrowser
+    Touch.InteractiveGestures = [Zoom, Rotate, PressAndTap]
+    Align = Client
+    Size.Width = 581.000000000000000000
+    Size.Height = 483.000000000000000000
+    Size.PlatformDefault = False
+    OnDidFinishLoad = wbOAuthDidFinishLoad
+  end
+end
